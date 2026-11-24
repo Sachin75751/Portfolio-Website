@@ -1,79 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachin | Portfolio</title>
 
     <style>
-        body {
-            font-family: Arial;
-            background: #f5f7fa;
-            color: #333;
+        * {
             margin: 0;
-            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
         }
 
         header {
             background: white;
-            padding: 20px;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        h1, h2 {
+        header h2 {
+            color: #6d28d9;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #334155;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #7c3aed;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(120deg, #dbeafe, #ede9fe, #ffedd5);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #1e1b4b;
+        }
+
+        .hero span {
+            color: #7c3aed;
+        }
+
+        .hero h3 {
             color: #2563eb;
+            margin: 10px;
+        }
+
+        .hero p {
+            color: #475569;
         }
 
         section {
-            padding: 30px;
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #6d28d9;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .card {
             background: white;
-            padding: 15px;
-            margin: 10px auto;
-            max-width: 500px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 180px;
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid #7c3aed;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 8px;
         }
 
         footer {
-            background: white;
-            padding: 15px;
+            text-align: center;
+            padding: 20px;
+            background: #1e1b4b;
+            color: white;
         }
-    </style>
-</head>
 
-<body>
-
-    <header>
-        <h2>Sachin</h2>
-        <p>Cloud & Data Enthusiast</p>
-    </header>
-
-    <section>
-        <h1>Hello, I'm Sachin!</h1>
-        <p>Interested in Cloud Computing, DevOps and Data Engineering.</p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <div class="card">Python | SQL | AWS | Linux</div>
-        <div class="card">Docker | Kubernetes | Jenkins | Git</div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>CI/CD Pipeline</h3>
-            <p>Website deployment using Jenkins, GitHub and AWS.</p>
-        </div>
-
-        <div class="card">
-            <h3>Vehicle Recognition</h3>
-            <p>Number plate detection using YOLOv5 and OpenCV.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Sachin | Portfolio</p>
-    </footer>
-
-</body>
-</html>
+        @media(max-width: 600px) {
+            header {
+                flex
