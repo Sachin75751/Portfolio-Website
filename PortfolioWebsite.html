@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sachin | Portfolio</title>
+    <title>Sachin | Tech Portfolio</title>
 
     <style>
         * {
@@ -14,99 +14,84 @@
         }
 
         body {
-            background: #f8fafc;
-            color: #1e293b;
-            line-height: 1.6;
+            background: #fffaf5;
+            color: #25213b;
         }
 
         header {
-            background: white;
-            padding: 20px 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 22px 10%;
+            background: white;
         }
 
         header h2 {
-            color: #6d28d9;
+            color: #7c3aed;
         }
 
         nav a {
             text-decoration: none;
-            color: #334155;
+            color: #333;
             margin-left: 20px;
+            font-size: 14px;
         }
 
         nav a:hover {
-            color: #7c3aed;
+            color: #f97316;
         }
 
         .hero {
-            text-align: center;
-            padding: 90px 20px;
-            background: linear-gradient(120deg, #dbeafe, #ede9fe, #ffedd5);
+            padding: 100px 10%;
+            background: linear-gradient(120deg, #ede9fe, #dbeafe, #ffedd5);
         }
 
         .hero h1 {
-            font-size: 42px;
-            color: #1e1b4b;
+            font-size: 48px;
+            margin-bottom: 15px;
         }
 
-        .hero span {
+        .hero h1 span {
             color: #7c3aed;
         }
 
         .hero h3 {
-            color: #2563eb;
-            margin: 10px;
+            color: #ea580c;
+            margin-bottom: 15px;
         }
 
         .hero p {
-            color: #475569;
+            max-width: 550px;
+            line-height: 1.8;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 25px;
+            background: #7c3aed;
+            color: white;
+            padding: 11px 25px;
+            border-radius: 25px;
         }
 
         section {
-            padding: 50px 10%;
+            padding: 65px 10%;
         }
 
-        h2 {
-            color: #6d28d9;
-            margin-bottom: 20px;
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #7c3aed;
         }
 
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
         }
 
         .card {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-            min-width: 180px;
-            border: 1px solid #e2e8f0;
-            border-top: 4px solid #7c3aed;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            transition: 0.3s;
-        }
-
-        .card h3 {
-            color: #2563eb;
-            margin-bottom: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e1b4b;
-            color: white;
-        }
-
-        @media(max-width: 600px) {
-            header {
-                flex
+            padding: 25px;
+            border-radius: 12px;
+            border-bottom: 4px solid #7
