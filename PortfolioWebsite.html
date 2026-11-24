@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sachin | Tech Portfolio</title>
+    <title>Sachin | Portfolio</title>
 
     <style>
         * {
@@ -14,84 +14,227 @@
         }
 
         body {
-            background: #fffaf5;
-            color: #25213b;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
         }
 
         header {
+            background: white;
+            padding: 20px 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 22px 10%;
-            background: white;
         }
 
         header h2 {
-            color: #7c3aed;
+            color: #6d28d9;
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #334155;
             margin-left: 20px;
-            font-size: 14px;
         }
 
         nav a:hover {
-            color: #f97316;
+            color: #7c3aed;
         }
 
         .hero {
-            padding: 100px 10%;
-            background: linear-gradient(120deg, #ede9fe, #dbeafe, #ffedd5);
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(120deg, #dbeafe, #ede9fe, #ffedd5);
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
+            font-size: 42px;
+            color: #1e1b4b;
         }
 
-        .hero h1 span {
+        .hero span {
             color: #7c3aed;
         }
 
         .hero h3 {
-            color: #ea580c;
-            margin-bottom: 15px;
+            color: #2563eb;
+            margin: 10px;
         }
 
         .hero p {
-            max-width: 550px;
-            line-height: 1.8;
-        }
-
-        .tag {
-            display: inline-block;
-            margin-top: 25px;
-            background: #7c3aed;
-            color: white;
-            padding: 11px 25px;
-            border-radius: 25px;
+            color: #475569;
         }
 
         section {
-            padding: 65px 10%;
+            padding: 50px 10%;
         }
 
-        section h2 {
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: #7c3aed;
+        h2 {
+            color: #6d28d9;
+            margin-bottom: 20px;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            border-bottom: 4px solid #7
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 180px;
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid #7c3aed;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1b4b;
+            color: white;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>SACHIN.</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Hello, I'm <span>Sachin</span></h1>
+        <h3>Support Analyst | Cloud & DevOps Enthusiast</h3>
+        <p>
+            Exploring Cloud Computing, DevOps,
+            Data Engineering and AI Infrastructure.
+        </p>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Technology professional with experience in
+            SaaS application support, SQL, ETL workflows
+            and data analysis. Interested in cloud
+            infrastructure, automation and DevOps.
+            Always learning and building with new technologies.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Support Analyst</h3>
+                <p>CubeLogic | 2024 - Present</p>
+                <p>
+                    SaaS and On-Prem application support,
+                    SQL debugging, ETL monitoring and
+                    deployment activities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Data Engineer Trainee</h3>
+                <p>Feathersoft</p>
+                <p>
+                    Worked with PySpark, SQL,
+                    data transformation and ETL pipelines.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="cards">
+            <div class="card">Python</div>
+            <div class="card">SQL</div>
+            <div class="card">AWS</div>
+            <div class="card">Linux</div>
+            <div class="card">Docker</div>
+            <div class="card">Kubernetes</div>
+            <div class="card">Jenkins</div>
+            <div class="card">Git & GitHub</div>
+            <div class="card">Power BI</div>
+            <div class="card">PySpark</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>CI/CD Pipeline</h3>
+                <p>
+                    Automated website deployment using
+                    Jenkins, GitHub and AWS EC2.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Vehicle Recognition</h3>
+                <p>
+                    Number plate detection and document
+                    verification using YOLOv5 and OpenCV.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Data Engineering</h3>
+                <p>
+                    ETL workflows and data transformation
+                    using Python, PySpark and SQL.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sachin | Built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
