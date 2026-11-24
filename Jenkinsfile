@@ -4,9 +4,9 @@ pipeline {
     stages {
 
         // Stage 1: Build
-        stage('Build') {
+        stage('build') {
             agent {
-                label 'Build'
+                label 'build'
             }
 
             steps {
@@ -25,9 +25,9 @@ pipeline {
         }
 
         // Stage 2: Deploy
-        stage('Deploy') {
+        stage('deploy') {
             agent {
-                label 'Deploy'
+                label 'deploy'
             }
 
             steps {
